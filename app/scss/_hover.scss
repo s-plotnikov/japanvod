@@ -1,0 +1,38 @@
+@media (min-width: 991px){
+  .hover_orange:hover {
+    color: #ff8100;
+  }
+  .nav-link:hover {
+    .nav-link__bg::before {
+      opacity: 1;
+    }
+    .nav-link__border {
+      opacity: 1;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  .product-card:hover {
+    box-shadow: 0px 0px 8px 0px rgba(16, 25, 47, 0.2);
+  }
+  .footer__nav-link:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+  .callback-form__btn:hover {
+    box-shadow: 4px 4px 10px 4px rgba(251, 252, 253, 0.3);
+  }
+  .hero-callback__soc:hover {
+    span {
+      color: #ff8100;
+    }
+  }
+  .hero__btn-wrp:hover::before {
+    opacity: 0.4;
+  }
+  .footer__contact:hover span {
+    color: #ff8100;
+  }
+}

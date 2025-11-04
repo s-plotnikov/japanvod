@@ -1,0 +1,181 @@
+"use strict";
+
+$(function () {
+
+  $('.js-open-menu').on('click', function () {
+    $('.menu').addClass('__show');
+    $('body').addClass('fixedPosition');
+  });
+  $('.js-close-menu').on('click', function () {
+    $('.menu').removeClass('__show');
+    $('body').removeClass('fixedPosition');
+  });
+
+  // header scroll
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $(".header").addClass("__scroll");
+    } else {
+      $(".header").removeClass("__scroll");
+    }
+  });
+
+  $(document).ready(function () {
+    if ($(this).scrollTop() > 0) {
+      $(".header").addClass("__scroll");
+    } else {
+      $(".header").removeClass("__scroll");
+    }
+  });
+
+  function backToTop() {
+    var _this = this;
+    var button = $(".to-top");
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 800) {
+        button.fadeIn();
+      } else {
+        button.fadeOut();
+      }
+    });
+    button.on("click", function (e) {
+      e.preventDefault();
+      $("html").animate(
+        {
+          scrollTop: 0,
+        },
+        500
+      );
+    });
+  }
+  backToTop();
+
+  // ТАБЫ
+  $(".js-open-tab").on("click", function () {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active")
+      .closest(".tab")
+      .find(".tab__content")
+      .removeClass("active")
+      .eq($(this).index())
+      .addClass("active");
+  });
+
+});
+
+$(document).ready(function () {
+  if ($(".js-mask-phone").length) {
+    $(".js-mask-phone").mask("+7 (X99) 999-9999", {
+      // placeholder: 'Номер телефона',
+      translation: {
+        X: {
+          pattern: /9/,
+          optional: false,
+        },
+      },
+    });
+  }
+});
+
+var swiper = new Swiper(".slider-one", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: false,
+  navigation: {
+    nextEl: ".slider-one__next",
+    prevEl: ".slider-one__prev",
+  },
+  pagination: {
+    el: ".slider-one__pagination",
+    dynamicBullets: false,
+  },
+});
+
+var swiper = new Swiper(".slider-three", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: false,
+  navigation: {
+    nextEl: ".slider-three__next",
+    prevEl: ".slider-three__prev",
+  },
+  pagination: {
+    el: ".slider-three__pagination",
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    760: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});
+
+var swiper = new Swiper(".slider-four", {
+  slidesPerView: 2,
+  spaceBetween: 8,
+  loop: false,
+  navigation: {
+    nextEl: ".slider-four__next",
+    prevEl: ".slider-four__prev",
+  },
+  pagination: {
+    el: ".slider-four__pagination",
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    860: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+
+
+$(document).ready(function () {
+  if ($(".accordion").length) {
+    document.querySelectorAll(".accordion").forEach((item, index) => {
+      item.id = "accordion" + (index + 1);
+      new ItcAccordion("#" + item.id, {
+        alwaysOpen: true,
+      });
+    });
+  }
+});
+
+$(document).ready(function () {
+  $(".js-anchor").on("click", function (e) {
+    var anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr("href")).offset().top - 80,
+        },
+        500
+      );
+    e.preventDefault();
+    return false;
+  });
+});
+
+
+

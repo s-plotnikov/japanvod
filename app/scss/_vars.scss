@@ -1,0 +1,88 @@
+@import 'libs';
+
+:root {
+  --main-bg: #f0f0f0;
+  --dark-bg: #1b212c;
+  --main-text: #282828;
+  --dark-blue: #06214e;
+  --r20: 20px;
+  --r30: 30px;
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-accent {
+  background-color: var(--accent);
+}
+.bg-brown {
+  background-color: var(--dark-bg);
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.color-black {
+  color: var(--main-text);
+}
+.color-white {
+  color: #fff;
+}
+.color-darkblue {
+  color: var(--dark-blue);
+}
+
+.color-muted {
+  opacity: 0.64;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.border {
+  border: 1px solid var(--border-color);
+}
+
+.r-26 {
+  border-radius: var(--r26);
+}
+.r-36 {
+  border-radius: var(--r36);
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.pb-60 {
+  padding-bottom: 60px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+.pb-120 {
+  padding-bottom: 120px;
+}
+.pt-120 {
+  padding-top: 120px;
+}
+.pb-160 {
+  @include adaptiv-value("padding-bottom", 160, 40, 1);
+}
+.pt-160 {
+  @include adaptiv-value("padding-top", 160, 40, 1);
+}
+.mb-64 {
+  @include adaptiv-value("margin-bottom", 64, 30, 1);
+}
+.mb-96 {
+  @include adaptiv-value("margin-bottom", 96, 30, 1);
+}
+.mb-120 {
+  @include adaptiv-value("margin-bottom", 120, 30, 1);
+}

@@ -1,0 +1,132 @@
+@import 'libs';
+
+
+@font-face {
+  font-family: 'MTS Sans';
+  src: 
+    url('/fonts/mtsans-boldcond.woff') format('woff'),
+    url('/fonts/mtsans-boldcond.woff2') format('woff2'),
+    url('/fonts/mtsans-boldcond.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MTS Sans';
+  src: 
+    url('/fonts/mtsans-regular.woff') format('woff'),
+    url('/fonts/mtsans-regular.woff2') format('woff2'),
+    url('/fonts/mtsans-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MTS Sans';
+  src: 
+    url('/fonts/mtsans-light.woff') format('woff'),
+    url('/fonts/mtsans-light.woff2') format('woff2'),
+    url('/fonts/mtsans-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+h1 {
+  @include adaptiv-value("font-size", 68, 34, 1);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.74px;
+}
+.h1 {
+  @include adaptiv-value("font-size", 68, 34, 1);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.74px;
+}
+h2 {
+  @include adaptiv-value("font-size", 72, 24, 1);
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.74px;
+}
+.h2 {
+  @include adaptiv-value("font-size", 72, 24, 1);
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.74px;
+}
+h3 {
+  @include adaptiv-value("font-size", 30, 22, 1);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+}
+.h3 {
+  @include adaptiv-value("font-size", 30, 22, 1);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+}
+h4 {
+  @include adaptiv-value("font-size", 28, 20, 1);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}
+.h4 {
+  @include adaptiv-value("font-size", 28, 20, 1);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}
+h5 {
+  @include adaptiv-value("font-size", 20, 18, 1);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+}
+.h5 {
+  @include adaptiv-value("font-size", 20, 18, 1);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+}
+
+.fs-20 {
+  @include adaptiv-value("font-size", 20, 18, 1);
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
