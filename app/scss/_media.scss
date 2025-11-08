@@ -1,19 +1,245 @@
-@media (max-width: 1400px) {
+@media (max-width: 2200px) {
+  .page-decor {
+    &__img {
+      position: absolute;
+      &.__top-left {
+        left: 0;
+      }
+      &.__top-right {
+        right: 0;
+        top: 28%;
+      }
+      &.__middle-right {
+        right: 0;
+      }
+      &.__bottom-right {
+        right: 0;
+      }
+      &.__bottom-left {
+        left: 0;
+      }
+    }
+  }
+}
 
+@media (max-width: 1400px) {
+  .header {
+    &__logo {
+      justify-content: flex-start;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
-
+  .header {
+    &__nav-link {
+      font-size: 18px;
+    }
+    &__tel {
+      font-size: 22px;
+    }
+    &__mail {
+      font-size: 20px;
+    }
+  }
 }
 
-@media (max-width: 992px) {
-
+@media (max-width: 991px) {
+  .header__menu-btn {
+    display: flex;
+  }
+  .hero {
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+    &__btn-wrp {
+      margin: 0 auto;
+    }
+    &__btn-wrp::before {
+      display: none;
+    }
+  }
+  .swiper-wrapper.row {
+    flex-wrap: nowrap;
+  }
+  .back-to-top {
+    right: 15px;
+    bottom: 15px;
+    img {
+      width: 56px;
+      height: auto;
+    }
+  }
+  .slider-review {
+    &__wrapper {
+      display: flex;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-
+  .hero__modal-btn {
+    display: block;
+  }
+  .footer {
+    padding: 40px 0;
+    &__logo {
+      max-width: 180px;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 26px;
+      margin-left: auto;
+    }
+  }
+  .footer__nav-link::before {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
-
+  body {
+    font-weight: 400;
+  }
+  .header {
+    height: 74px;
+    &__logo {
+      margin-top: 3px;
+    }
+    &__menu-btn {
+      width: 40px;
+      height: 40px;
+      gap: 6px;
+      span {
+        width: 32px;
+        height: 4px;
+      }
+    }
+    &__social {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  .header_scroll {
+    height: 74px;
+  }
+  .hero {
+    &::after {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      content: '';
+      background: linear-gradient(180deg, rgb(2, 16, 52), rgba(16, 52, 0, 0) 24%);
+    }
+    margin-bottom: 36px;
+    &__btn-wrp {
+      width: 100%;
+    }
+    &__btn {
+      width: 100%;
+      height: 100px;
+    }
+    &__btn-text {
+      width: 70%;
+      left: auto;
+      right: 10px;
+      font-size: 18px;
+    }
+  }
+  .menu {
+    &__header {
+      padding: 12px 0;
+    }
+    &__close {
+      width: 40px;
+      height: 40px;
+      &::after,
+      &::before {
+        width: 32px;
+        height: 4px;
+      }
+    }
+    &__logo {
+      max-width: 230px;
+    }
+    &__nav-link {
+      padding: 12px 0;
+      font-size: 24px;
+    }
+    &__contacts-link {
+      font-size: 24px;
+    }
+  }
+  .section-wrp {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: center;
+    overflow: visible;
+  }
+  .mission-text {
+    font-size: 20px;
+    span {
+      display: block;
+      &:first-child {
+        margin-left: -50px;
+      }
+      &:last-child {
+        margin-left: 50px;
+      }
+    }
+  }
+  .review-img {
+    width: 80%;
+    margin: 0 auto;
+    &.img-resp.__120 {
+      padding-top: 100%;
+    }
+  }
+  .footer {
+    text-align: center;
+    &__policy {
+      font-size: 20px;
+    }
+    &__offert {
+      font-size: 20px;
+    }
+    &__info {
+      font-size: 20px;
+    }
+    &__nav-link {
+      padding: 4px 0;
+      font-size: 24px;
+    }
+    &__contact span {
+      font-size: 22px;
+    }
+  }
+  .footer__nav {
+    display: block;
+    margin-left: 0;
+  }
+  .product-list__btn {
+    margin-top: 0px;
+  }
+  .section-scheme {
+    .footer__contact {
+      justify-content: center;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+  .mb-30 {
+    margin-bottom: 56px;
+  }
+  .action-img {
+    display: block;
+  }
 }

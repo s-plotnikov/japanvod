@@ -1,7 +1,8 @@
 <footer class="footer">
   <div class="footer__container">
+    <a class="footer__logo" href="#"><img src="/images/logo-footer.png" alt=""></a>
     <div class="row mb-5">
-      <div class="col-md-6">
+      <div class="col-md-6 order-1 order-md-0">
         <a href="tel:+79132630808" class="footer__contact">
           <img src="/images/icons/phone.png" alt="">
           <span>8-(913)-263-0808</span>
@@ -19,23 +20,62 @@
           <span>telegram</span>
         </a>
       </div>
-      <div class="col-md-6 text-end">
+      <div class="col-md-6 text-md-end mb-4 mb-md-0">
         <nav class="footer__nav text-start">
-          <a href="#" class="footer__nav-link">о нас</a>
-          <a href="#" class="footer__nav-link">актуальные цены</a>
-          <a href="#" class="footer__nav-link">Отзывы</a>
-          <a href="#" class="footer__nav-link">Схема работы</a>
-          <a href="#" class="footer__nav-link">Акция</a>
+          <a href="#about" class="footer__nav-link js-anchor">о нас</a>
+          <a href="#price" class="footer__nav-link js-anchor">актуальные цены</a>
+          <a href="#review" class="footer__nav-link js-anchor">Отзывы</a>
+          <a href="#work" class="footer__nav-link js-anchor">Схема работы</a>
+          <a href="#action" class="footer__nav-link js-anchor">Акция</a>
         </nav>
       </div>
     </div>
     <a href="#" class="footer__policy hover_orange">ПОлитика конфиденциальности</a>
-    <p class="footer__offert">Данный Интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ. Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам японовод.</p>
+    <p class="footer__offert">Данный Интернет-сайт носит исключительно информационный характер и ни при каких условиях
+      не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ. Для получения
+      подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам
+      японовод.</p>
     <p class="footer__info">ИП Леонова Татьяна Николаевна ИНН 220912661077 ОГРНИП 320222500064112</p>
   </div>
 </footer>
 </div>
 
+<div class="modal-callback" id="modal-callback" style="display:none;">
+  <button class="menu__close modal-callback__close-btn" title="Close" data-fancybox-close></button>
+  <div class="hero__callback hero-callback">
+    <div class="hero-callback__top">
+      <p class="hero-callback__top-text">свяжитесь с нами</p>
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="#" class="hero-callback__soc">
+          <img src="/images/icons/tg.png" alt="">
+          <span>telegram</span>
+        </a>
+        <a href="#" class="hero-callback__soc">
+          <img src="/images/icons/wa.png" alt="">
+          <span>whatsapp</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-callback__middle">
+      <p class="hcm__or">или</p>
+      <p class="hcm__request">оставьте заявку</p>
+      <p class="hcm__sm">Наши менеджеры свяжутся с вами в ближайшее время</p>
+    </div>
+    <div class="hero-callback__form callback-form">
+      <form>
+        <input type="text" class="input callback-form__input" placeholder="ваше имя">
+        <input type="tel" class="input callback-form__input js-mask-phone" placeholder="номер телефона">
+        <button class="callback-form__btn" type="submit">отправить заявку</button>
+        <p class="callback-form__policy">Нажимая на кнопку вы соглашаетесь с <a class="hover_orange" href="#">Политикой
+            конфиденциальности</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="back-to-top noSelect">
+  <img src="/images/decor/to-top.png" alt="">
+</div>
 
 <!-- <script src="js/main.min.js"></script> -->
 <script src="js/main.js"></script>

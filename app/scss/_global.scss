@@ -5,7 +5,7 @@ body {
 
 body {
 	font-family: "MTS Sans", sans-serif;
-	@include adaptiv-value("font-size", 30, 16, 1);
+	@include adaptiv-value("font-size", 30, 17, 1);
 	font-feature-settings: "lnum"; 
 	font-weight: 300;
 	line-height: 1.2;
@@ -16,6 +16,7 @@ body {
 }
 
 .page {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

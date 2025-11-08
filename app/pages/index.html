@@ -8,8 +8,8 @@
       <img class="hero__bg" src="/images/hero.webp" alt="">
     </picture>
     <div class="hero__container">
-      <div class="row gx-xl-5">
-        <div class="col-lg-4">
+      <div class="row gx-xxl-5">
+        <div class="d-none d-md-block col-lg-5 col-xl-4 order-1 order-lg-0">
           <div class="hero__callback hero-callback">
             <div class="hero-callback__top">
               <p class="hero-callback__top-text">свяжитесь с нами</p>
@@ -41,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-7 col-xl-8 mb-5 mb-lg-0">
           <h1 class="h1 color-white hero__title">авто под заказ из японии</h1>
           <p class="hero__subtitle">доступные и честные автомобили каждому!</p>
           <div class="hero__btn-wrp">
@@ -52,9 +52,13 @@
         </div>
       </div>
     </div>
+    <div class="hero__modal-btn" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>
+      <p class="hero__modal-btn-title">связаться с нами</p>
+      <p class="hero__modal-btn-subtitle">Наши менеджеры свяжутся с вами в ближайшее время</p>
+    </div>
   </div>
 
-  <section class="mb-30">
+  <section class="mb-30" id="about">
     <div class="container">
       <div class="section-wrp">
         <h2 class="h2 text-center mb-4">о нас</h2>
@@ -69,162 +73,164 @@
             нами любым удобным способом!</p>
         </div>
         <h2 class="h2 text-center mb-4">наша миссия</h2>
-        <p class="text-center mission-text">доступные и честные автомобили каждому!</p>
+        <p class="text-center mission-text"><span>доступные и честные</span> <span>автомобили каждому!</span></p>
       </div>
     </div>
   </section>
 
-  <section class="mb-30">
+  <section class="mb-30 overflow-hidden" id="price">
     <div class="container">
       <div class="section-wrp">
         <h2 class="h2 text-center mb-4">актуальные цены</h2>
-        <div class="row g-4 g-xl-5">
-          <div class="col-sm-6 col-lg-4">
-            <div class="product-card">
-              <div class="product-card__img">
-                <img src="/images/product-1.jpg" alt="">
-              </div>
-              <div class="product-card__content">
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
-                  <div class="product-card__model">TOYOTA corolla touring</div>
+        <div class="slider-price swiper overflow-visible">
+          <div class="swiper-wrapper row g-4 g-xl-5">
+            <div class="swiper-slide col-lg-4">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="/images/product-1.jpg" alt="">
                 </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
-                  <div class="product-card__spec">2010 г.в.</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
-                  <div class="product-card__spec">до 100 000 км</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
-                  <div class="product-card__spec">1 080 000 р.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="product-card">
-              <div class="product-card__img">
-                <img src="/images/product-1.jpg" alt="">
-              </div>
-              <div class="product-card__content">
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
-                  <div class="product-card__model">TOYOTA corolla touring</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
-                  <div class="product-card__spec">2010 г.в.</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
-                  <div class="product-card__spec">до 100 000 км</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
-                  <div class="product-card__spec">1 080 000 р.</div>
+                <div class="product-card__content">
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
+                    <div class="product-card__model">TOYOTA corolla touring</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
+                    <div class="product-card__spec">2010 г.в.</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
+                    <div class="product-card__spec">до 100 000 км</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
+                    <div class="product-card__spec">1 080 000 р.</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="product-card">
-              <div class="product-card__img">
-                <img src="/images/product-1.jpg" alt="">
-              </div>
-              <div class="product-card__content">
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
-                  <div class="product-card__model">TOYOTA corolla touring</div>
+            <div class="swiper-slide col-lg-4">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="/images/product-1.jpg" alt="">
                 </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
-                  <div class="product-card__spec">2010 г.в.</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
-                  <div class="product-card__spec">до 100 000 км</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
-                  <div class="product-card__spec">1 080 000 р.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="product-card">
-              <div class="product-card__img">
-                <img src="/images/product-1.jpg" alt="">
-              </div>
-              <div class="product-card__content">
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
-                  <div class="product-card__model">TOYOTA corolla touring</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
-                  <div class="product-card__spec">2010 г.в.</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
-                  <div class="product-card__spec">до 100 000 км</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
-                  <div class="product-card__spec">1 080 000 р.</div>
+                <div class="product-card__content">
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
+                    <div class="product-card__model">TOYOTA corolla touring</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
+                    <div class="product-card__spec">2010 г.в.</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
+                    <div class="product-card__spec">до 100 000 км</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
+                    <div class="product-card__spec">1 080 000 р.</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="product-card">
-              <div class="product-card__img">
-                <img src="/images/product-1.jpg" alt="">
-              </div>
-              <div class="product-card__content">
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
-                  <div class="product-card__model">TOYOTA corolla touring</div>
+            <div class="swiper-slide col-lg-4">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="/images/product-1.jpg" alt="">
                 </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
-                  <div class="product-card__spec">2010 г.в.</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
-                  <div class="product-card__spec">до 100 000 км</div>
-                </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
-                  <div class="product-card__spec">1 080 000 р.</div>
+                <div class="product-card__content">
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
+                    <div class="product-card__model">TOYOTA corolla touring</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
+                    <div class="product-card__spec">2010 г.в.</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
+                    <div class="product-card__spec">до 100 000 км</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
+                    <div class="product-card__spec">1 080 000 р.</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="product-card">
-              <div class="product-card__img">
-                <img src="/images/product-1.jpg" alt="">
+            <div class="swiper-slide col-lg-4">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="/images/product-1.jpg" alt="">
+                </div>
+                <div class="product-card__content">
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
+                    <div class="product-card__model">TOYOTA corolla touring</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
+                    <div class="product-card__spec">2010 г.в.</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
+                    <div class="product-card__spec">до 100 000 км</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
+                    <div class="product-card__spec">1 080 000 р.</div>
+                  </div>
+                </div>
               </div>
-              <div class="product-card__content">
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
-                  <div class="product-card__model">TOYOTA corolla touring</div>
+            </div>
+            <div class="swiper-slide col-lg-4">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="/images/product-1.jpg" alt="">
                 </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
-                  <div class="product-card__spec">2010 г.в.</div>
+                <div class="product-card__content">
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
+                    <div class="product-card__model">TOYOTA corolla touring</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
+                    <div class="product-card__spec">2010 г.в.</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
+                    <div class="product-card__spec">до 100 000 км</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
+                    <div class="product-card__spec">1 080 000 р.</div>
+                  </div>
                 </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
-                  <div class="product-card__spec">до 100 000 км</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-lg-4">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="/images/product-1.jpg" alt="">
                 </div>
-                <div class="product-card__option">
-                  <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
-                  <div class="product-card__spec">1 080 000 р.</div>
+                <div class="product-card__content">
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/model.jpg" alt=""></div>
+                    <div class="product-card__model">TOYOTA corolla touring</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/calendar.jpg" alt=""></div>
+                    <div class="product-card__spec">2010 г.в.</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/road.jpg" alt=""></div>
+                    <div class="product-card__spec">до 100 000 км</div>
+                  </div>
+                  <div class="product-card__option">
+                    <div class="product-card__icon"><img src="/images/icons/cost.jpg" alt=""></div>
+                    <div class="product-card__spec">1 080 000 р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,64 +245,89 @@
     </div>
   </section>
 
-  <section class="mb-30">
+  <section class="mb-30 overflow-hidden" id="review">
     <div class="container">
       <div class="section-wrp">
         <h2 class="h2 text-center mb-4">отзывы</h2>
-        <div class="row g-4 g-xl-5 mb-96">
-          <div class="col-lg-4">
-            <div class="resp-img __120 r-20">
-              <img src="/images/review.jpg" alt="">
+        <div class="swiper slider-review">
+          <div class="swiper-wrapper slider-review__wrapper">
+            <div class="swiper-slide">
+              <div class="row g-4 g-xl-5 mb-96">
+                <div class="col-lg-4">
+                  <div class="review-img img-resp __120 r-20">
+                    <img src="/images/review.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="content-wrapper">
+                    <p>Всех приветствую, меня зовут Пётр. Обратился весной к ребятам, с запросом возможных вариантов
+                      недорогих
+                      семейных автомобилей из Японии. Бюджет с доставкой до Новосибирска не более 1100000 рублей.
+                      Хотелось
+                      пробег до 100000 километров. Изначально рассматривал Toyota Corolla Fielder. Мне предложили
+                      обратить
+                      внимание на Toyota Isis, так как за те же деньги мы получаем минивен а не универсал, да и более
+                      приеместый двигатель.</p>
+                    <p>За неделю выиграли вариант на аукционе, точно под мои параметры. 2010г. 99000 пробега , оценка 4
+                      балла
+                      , максимальная комплектация Platana. Автомобиль пришел в Новосибирск чуть меньше чем за месяц с
+                      момента
+                      начала работы.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="content-wrapper">
-              <p>Всех приветствую, меня зовут Пётр. Обратился весной к ребятам, с запросом возможных вариантов недорогих
-                семейных автомобилей из Японии. Бюджет с доставкой до Новосибирска не более 1100000 рублей. Хотелось
-                пробег до 100000 километров. Изначально рассматривал Toyota Corolla Fielder. Мне предложили обратить
-                внимание на Toyota Isis, так как за те же деньги мы получаем минивен а не универсал, да и более
-                приеместый двигатель.</p>
-              <p>За неделю выиграли вариант на аукционе, точно под мои параметры. 2010г. 99000 пробега , оценка 4 балла
-                , максимальная комплектация Platana. Автомобиль пришел в Новосибирск чуть меньше чем за месяц с момента
-                начала работы.</p>
+            <div class="swiper-slide">
+              <div class="row g-4 g-xl-5 mb-96">
+                <div class="col-lg-8 order-1 order-lg-0">
+                  <div class="content-wrapper">
+                    <p>Всех приветствую, меня зовут Пётр. Обратился весной к ребятам, с запросом возможных вариантов
+                      недорогих
+                      семейных автомобилей из Японии. Бюджет с доставкой до Новосибирска не более 1100000 рублей.
+                      Хотелось
+                      пробег до 100000 километров. Изначально рассматривал Toyota Corolla Fielder. Мне предложили
+                      обратить
+                      внимание на Toyota Isis, так как за те же деньги мы получаем минивен а не универсал, да и более
+                      приеместый двигатель.</p>
+                    <p>За неделю выиграли вариант на аукционе, точно под мои параметры. 2010г. 99000 пробега , оценка 4
+                      балла
+                      , максимальная комплектация Platana. Автомобиль пришел в Новосибирск чуть меньше чем за месяц с
+                      момента
+                      начала работы.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="review-img img-resp __120 r-20">
+                    <img src="/images/review.jpg" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row g-4 g-xl-5 mb-96">
-          <div class="col-lg-8">
-            <div class="content-wrapper">
-              <p>Всех приветствую, меня зовут Пётр. Обратился весной к ребятам, с запросом возможных вариантов недорогих
-                семейных автомобилей из Японии. Бюджет с доставкой до Новосибирска не более 1100000 рублей. Хотелось
-                пробег до 100000 километров. Изначально рассматривал Toyota Corolla Fielder. Мне предложили обратить
-                внимание на Toyota Isis, так как за те же деньги мы получаем минивен а не универсал, да и более
-                приеместый двигатель.</p>
-              <p>За неделю выиграли вариант на аукционе, точно под мои параметры. 2010г. 99000 пробега , оценка 4 балла
-                , максимальная комплектация Platana. Автомобиль пришел в Новосибирск чуть меньше чем за месяц с момента
-                начала работы.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="resp-img __120 r-20">
-              <img src="/images/review.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="row g-4 g-xl-5">
-          <div class="col-lg-4">
-            <div class="resp-img __120 r-20">
-              <img src="/images/review.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="content-wrapper">
-              <p>Всех приветствую, меня зовут Пётр. Обратился весной к ребятам, с запросом возможных вариантов недорогих
-                семейных автомобилей из Японии. Бюджет с доставкой до Новосибирска не более 1100000 рублей. Хотелось
-                пробег до 100000 километров. Изначально рассматривал Toyota Corolla Fielder. Мне предложили обратить
-                внимание на Toyota Isis, так как за те же деньги мы получаем минивен а не универсал, да и более
-                приеместый двигатель.</p>
-              <p>За неделю выиграли вариант на аукционе, точно под мои параметры. 2010г. 99000 пробега , оценка 4 балла
-                , максимальная комплектация Platana. Автомобиль пришел в Новосибирск чуть меньше чем за месяц с момента
-                начала работы.</p>
+            <div class="swiper-slide">
+              <div class="row g-4 g-xl-5">
+                <div class="col-lg-4">
+                  <div class="review-img img-resp __120 r-20">
+                    <img src="/images/review.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="content-wrapper">
+                    <p>Всех приветствую, меня зовут Пётр. Обратился весной к ребятам, с запросом возможных вариантов
+                      недорогих
+                      семейных автомобилей из Японии. Бюджет с доставкой до Новосибирска не более 1100000 рублей.
+                      Хотелось
+                      пробег до 100000 километров. Изначально рассматривал Toyota Corolla Fielder. Мне предложили
+                      обратить
+                      внимание на Toyota Isis, так как за те же деньги мы получаем минивен а не универсал, да и более
+                      приеместый двигатель.</p>
+                    <p>За неделю выиграли вариант на аукционе, точно под мои параметры. 2010г. 99000 пробега , оценка 4
+                      балла
+                      , максимальная комплектация Platana. Автомобиль пришел в Новосибирск чуть меньше чем за месяц с
+                      момента
+                      начала работы.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,7 +340,7 @@
     </div>
   </section>
 
-  <section class="mb-30 section-scheme">
+  <section class="mb-30 section-scheme" id="work">
     <div class="container">
       <div class="section-wrp">
         <h2 class="h2 text-center mb-4">схема работы</h2>
@@ -353,7 +384,7 @@
     </div>
   </section>
 
-  <section class="mb-30">
+  <section class="mb-30" id="action">
     <div class="container">
       <div class="section-wrp">
         <h2 class="h2 text-center mb-4">акция</h2>
@@ -370,6 +401,7 @@
           <p class="fw-700">ВАШ ЯПОНОВОД</p>
         </div>
       </div>
+      <img src="/images/action.jpg" alt="" class="action-img">
     </div>
   </section>
 

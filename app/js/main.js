@@ -14,9 +14,9 @@ $(function () {
   // header scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
-      $(".header").addClass("__scroll");
+      $(".header_scroll").addClass("__show");
     } else {
-      $(".header").removeClass("__scroll");
+      $(".header_scroll").removeClass("__show");
     }
   });
 
@@ -30,7 +30,7 @@ $(function () {
 
   function backToTop() {
     var _this = this;
-    var button = $(".to-top");
+    var button = $(".back-to-top");
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > 800) {
         button.fadeIn();
@@ -168,7 +168,7 @@ $(document).ready(function () {
       .stop()
       .animate(
         {
-          scrollTop: $(anchor.attr("href")).offset().top - 80,
+          scrollTop: $(anchor.attr("href")).offset().top - 120,
         },
         500
       );
@@ -177,5 +177,18 @@ $(document).ready(function () {
   });
 });
 
+if (window.innerWidth <= 991) {
+  var swiper = new Swiper(".slider-price", {
+    slidesPerView: 1.1,
+    spaceBetween: 0,
+    loop: false,
+  });
+}
 
-
+if (window.innerWidth <= 991) {
+  var swiper = new Swiper(".slider-review", {
+    slidesPerView: 1.1,
+    spaceBetween: 16,
+    loop: false,
+  });
+}
