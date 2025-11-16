@@ -170,6 +170,16 @@
   position: relative;
   padding: 28px 0;
   margin-bottom: 84px;
+  &::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    background: linear-gradient(180deg, rgb(2, 16, 52), rgba(16, 52, 0, 0) 24%);
+    pointer-events: none;
+  }
   &__bg {
     position: absolute;
     top: 0;
@@ -188,18 +198,18 @@
   }
   &__callback {
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: rgba(255, 255, 255, 0.708);
     border: 1px solid #fff;
   }
   &__title {
-    text-shadow: 1px 1px rgb(27, 33, 44);
+    text-shadow: 2px 2px rgb(27, 33, 44);
   }
   &__subtitle {
     @include adaptiv-value("font-size", 40, 15, 1);
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: 1px 1px rgb(27, 33, 44);
+    text-shadow: 2px 2px rgb(27, 33, 44);
   }
   &__btn {
     display: block;
@@ -258,6 +268,7 @@
     font-size: 34px;
     color: #263655;
     text-transform: uppercase;
+    text-decoration: underline;
     font-weight: 700;
   }
   &__modal-btn-subtitle {
@@ -282,6 +293,7 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 16px;
+    text-shadow: 1px 1px #ffffff;
   }
   &__soc {
     display: flex;
@@ -297,6 +309,7 @@
       text-align: left;
       text-indent: -0.28px;
       transition: color 0.25s;
+      text-shadow: 1px 1px #ffffff;
     }
   }
   &__middle {
@@ -408,7 +421,7 @@
   padding: 10px;
   font-size: 16px;
   color: var(--dark-blue);
-  border: none;
+  border: 1px solid #06204e4d;
   outline: none;
   &::placeholder {
     font-size: 16px;
@@ -682,6 +695,22 @@ section {
   }
 }
 
+.modal-policy {
+  border-radius: 10px;
+  padding: 54px 25px 25px 35px;
+  max-width: 1200px;
+  .fancybox-button.fancybox-close-small {
+    display: none;
+  }
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+.policy-text {
+  font-size: 20px;
+}
 
 .slider-review {
   overflow: visible;

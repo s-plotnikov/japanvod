@@ -83,7 +83,7 @@
     display: block;
   }
   .footer {
-    padding: 40px 0;
+    padding: 40px 0 150px;
     &__logo {
       max-width: 180px;
       display: flex;
@@ -128,15 +128,6 @@
     height: 74px;
   }
   .hero {
-    &::after {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      position: absolute;
-      content: '';
-      background: linear-gradient(180deg, rgb(2, 16, 52), rgba(16, 52, 0, 0) 24%);
-    }
     margin-bottom: 36px;
     &__btn-wrp {
       width: 100%;
@@ -150,6 +141,7 @@
       left: auto;
       right: 10px;
       font-size: 18px;
+      line-height: 1.1;
     }
   }
   .menu {
@@ -180,7 +172,6 @@
     padding: 0;
     background-color: transparent;
     border-radius: 0;
-    text-align: center;
     overflow: visible;
   }
   .mission-text {
@@ -203,7 +194,6 @@
     }
   }
   .footer {
-    text-align: center;
     &__policy {
       font-size: 20px;
     }
@@ -230,7 +220,6 @@
   }
   .section-scheme {
     .footer__contact {
-      justify-content: center;
       span {
         font-size: 24px;
       }
@@ -241,5 +230,20 @@
   }
   .action-img {
     display: block;
+  }
+  .product-list__btn .hero__btn-text {
+    left: 48px;
+  }
+  .modal-policy {
+    padding: 54px 15px 25px;
+  }
+}
+
+@media (max-width: 340px) {
+  .hero__btn {
+    margin-top: 0;
+  }
+  .hero__btn-text {
+    width: 77%;
   }
 }
